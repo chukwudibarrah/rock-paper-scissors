@@ -13,24 +13,30 @@ let ties = 0;
 do {
 // establish game rules
 let userInput = prompt("Enter r (for rock), p (for paper) or s (for scissors):"); // create user input
-alert("You entered: " + userInput);
-alert("The computer entered: " + randomChoice)
+
+if (userInput === "r" || userInput === "p" || userInput === "s") {
+  alert("You entered: " + userInput);
+  alert("The computer entered: " + randomChoice)
+} else {
+  alert("Your selection is not allowed. Please try again.")
+}
 
 if ((userInput === "r" && randomChoice === "s") || (userInput === "s" && randomChoice === "p") || (userInput === "p" && randomChoice === "r")) {
       wins++
       alert("You won! :)")
       alert(wins++)
+      console.log("Current scores - Wins:", wins, "Loses:", loses, "Ties:", ties);
 } else if ((userInput === "r" && randomChoice === "p") || (userInput === "s" && randomChoice === "r") || (userInput === "p" && randomChoice === "s")) {
   loses++
   alert("You lost! :(")
   alert(loses++)
+  console.log("Current scores - Wins:", wins, "Loses:", loses, "Ties:", ties);
 } else if (userInput === randomChoice) {
   ties++
   alert("You tied! :|")
   alert(ties++)
-} else {
-  alert("Your selection is not allowed. Please try again.")
-}
+  console.log("Current scores - Wins:", wins, "Loses:", loses, "Ties:", ties);
+} 
 
-} while (wins < 11);
-alert("Final scores:")
+} while ((wins+loses+ties) < 11);
+console.log("Final scores - Wins:", wins, "Loses:", loses, "Ties:", ties);
