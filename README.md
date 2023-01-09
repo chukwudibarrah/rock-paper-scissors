@@ -1,18 +1,12 @@
 # Rock, Paper, Scissors
 
-In this activity, you will work with a partner to build a rock-paper-scissors game using only JavaScript.
-
-**Rules for rock-paper-scissors**
-
-* Rock: wins against scissors, loses to paper, and ties against itself.
-* Paper: wins against rock, loses to scissors, and ties against itself.
-* Scissors: wins against paper, loses to rock, and ties against itself.
+In this activity, I worked with @mohseenHamid to build a simple rock-paper-scissors game using only JavaScript.
 
 ![RPS-Example-Picture](images/RPS-example.png)
 
-### Instructions
+### Goals
 
-* Begin the process of coding out the rock-paper-scissors game.
+* The game was developed considering the following scenarios:
 
 * As a user:
   * I want to play Rock, Paper, Scissors against an automated opponent.
@@ -25,11 +19,11 @@ In this activity, you will work with a partner to build a rock-paper-scissors ga
 
 * Follow your pseudocode as much as you can, and if you get stuck don't worry, this is a challenging assignment.
 
-## 💡 Notes
+### Live game
 
-Refer to the documentation:
+Play the current version of the game here:
 
-* [MDN Web Docs on Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+https://chukwudibarrah.github.io/rock-paper-scissors/
 
 ---
 
